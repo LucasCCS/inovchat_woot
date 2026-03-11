@@ -5,6 +5,7 @@ import Policy from 'dashboard/components/policy.vue';
 import { useSidebarContext } from './provider';
 
 const props = defineProps({
+  show: { type: Boolean, default: true },
   label: { type: String, required: true },
   to: { type: [String, Object], required: true },
   icon: { type: [String, Object], default: null },
@@ -22,6 +23,7 @@ const shouldRenderComponent = computed(() => {
 <!-- eslint-disable-next-line vue/no-root-v-if -->
 <template>
   <Policy
+    v-if="show"
     :permissions="resolvePermissions(to)"
     :feature-flag="resolveFeatureFlag(to)"
     as="li"

@@ -122,7 +122,7 @@ onMounted(async () => {
         >
           <template v-for="child in accessibleChildren" :key="child.name">
             <!-- SubGroup with children -->
-            <li v-if="child.children" class="py-0.5">
+            <li v-if="child.show && child.children" class="py-0.5">
               <button
                 class="flex items-center gap-2 px-2 py-1.5 w-full rounded-lg text-n-slate-11 hover:bg-n-alpha-2 transition-colors duration-150 ease-out text-left rtl:text-right"
                 @click="toggleSubGroup(child.name)"
@@ -146,7 +146,7 @@ onMounted(async () => {
                   class="m-0 p-0 list-none ltr:pl-4 rtl:pr-4 mt-1 overflow-hidden"
                 >
                   <li
-                    v-for="subChild in getAccessibleSubChildren(child.children)"
+                    v-for="subChild in getAccessibleSubChildren(child.children).filter(subChild => subChild.show)"
                     :key="subChild.name"
                     class="py-0.5"
                   >
@@ -172,7 +172,7 @@ onMounted(async () => {
               </Transition>
             </li>
             <!-- Direct child item -->
-            <li v-else class="py-0.5">
+            <li v-else v-if="child.show" class="py-0.5">
               <button
                 class="flex items-center gap-2 px-2 py-1.5 w-full rounded-lg text-sm text-left rtl:text-right transition-colors duration-150 ease-out"
                 :class="{

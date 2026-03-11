@@ -11,6 +11,7 @@ import SidebarGroupEmptyLeaf from './SidebarGroupEmptyLeaf.vue';
 import SidebarCollapsedPopover from './SidebarCollapsedPopover.vue';
 
 const props = defineProps({
+  show: { type: Boolean, default: true },
   name: { type: String, required: true },
   label: { type: String, required: true },
   icon: { type: [String, Object, Function], default: null },
@@ -215,7 +216,7 @@ watch(
 <!-- eslint-disable-next-line vue/no-root-v-if -->
 <template>
   <Policy
-    v-if="!hasChildren || hasAccessibleChildren"
+    v-if="(!hasChildren || hasAccessibleChildren)"
     :permissions="resolvePermissions(to)"
     :feature-flag="resolveFeatureFlag(to)"
     as="li"

@@ -156,7 +156,6 @@ const confirmDeletion = () => {
         v-model:search-query="searchQuery"
         :title="$t('AGENT_MGMT.HEADER')"
         :description="$t('AGENT_MGMT.DESCRIPTION')"
-        :link-text="$t('AGENT_MGMT.LEARN_MORE')"
         :search-placeholder="$t('AGENT_MGMT.SEARCH_PLACEHOLDER')"
         feature-name="agents"
       >
