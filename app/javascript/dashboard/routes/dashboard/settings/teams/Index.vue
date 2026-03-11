@@ -91,7 +91,6 @@ const confirmPlaceHolderText = computed(() =>
         v-model:search-query="searchQuery"
         :title="$t('TEAMS_SETTINGS.HEADER')"
         :description="$t('TEAMS_SETTINGS.DESCRIPTION')"
-        :link-text="$t('TEAMS_SETTINGS.LEARN_MORE')"
         :search-placeholder="$t('TEAMS_SETTINGS.SEARCH_PLACEHOLDER')"
         feature-name="team_management"
       >

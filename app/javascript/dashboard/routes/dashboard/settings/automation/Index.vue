@@ -193,7 +193,6 @@ const tableHeaders = computed(() => {
         v-model:search-query="searchQuery"
         :title="$t('AUTOMATION.HEADER')"
         :description="$t('AUTOMATION.DESCRIPTION')"
-        :link-text="$t('AUTOMATION.LEARN_MORE')"
         :search-placeholder="$t('AUTOMATION.SEARCH_PLACEHOLDER')"
         feature-name="automation"
       >

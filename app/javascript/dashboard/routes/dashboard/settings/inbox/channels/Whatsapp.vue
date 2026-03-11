@@ -28,9 +28,11 @@ const hasWhatsappAppId = computed(() => {
   );
 });
 
-const selectedProvider = computed(() => route.query.provider);
+// const selectedProvider = computed(() => route.query.provider);
+const selectedProvider = computed(() => PROVIDER_TYPES.WHATSAPP);
 
-const showProviderSelection = computed(() => !selectedProvider.value);
+// const showProviderSelection = computed(() => !selectedProvider.value);
+const showProviderSelection = computed(() => false);
 
 const showConfiguration = computed(() => Boolean(selectedProvider.value));
 

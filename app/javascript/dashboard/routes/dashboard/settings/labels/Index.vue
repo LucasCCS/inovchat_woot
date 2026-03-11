@@ -109,7 +109,6 @@ onBeforeMount(() => {
         v-model:search-query="searchQuery"
         :title="$t('LABEL_MGMT.HEADER')"
         :description="$t('LABEL_MGMT.DESCRIPTION')"
-        :link-text="$t('LABEL_MGMT.LEARN_MORE')"
         :search-placeholder="$t('LABEL_MGMT.SEARCH_PLACEHOLDER')"
         feature-name="labels"
       >

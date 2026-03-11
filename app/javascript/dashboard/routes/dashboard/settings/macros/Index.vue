@@ -80,7 +80,6 @@ const tableHeaders = computed(() => {
         v-model:search-query="searchQuery"
         :title="$t('MACROS.HEADER')"
         :description="$t('MACROS.DESCRIPTION')"
-        :link-text="$t('MACROS.LEARN_MORE')"
         :search-placeholder="$t('MACROS.SEARCH_PLACEHOLDER')"
         feature-name="macros"
       >

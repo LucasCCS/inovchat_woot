@@ -91,7 +91,6 @@ const tableHeaders = computed(() => {
       <BaseSettingsHeader
         :title="$t('AUDIT_LOGS.HEADER')"
         :description="$t('AUDIT_LOGS.DESCRIPTION')"
-        :link-text="$t('AUDIT_LOGS.LEARN_MORE')"
         feature-name="audit_logs"
       />
     </template>

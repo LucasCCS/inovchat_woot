@@ -510,7 +510,7 @@ const menuItems = computed(() => {
         },
         ...reportRoutes.value,
         {
-          show: false,
+          show: true,
           name: 'Reports CSAT',
           label: t('SIDEBAR.CSAT'),
           to: accountScopedRoute('csat_reports'),
@@ -706,7 +706,7 @@ const menuItems = computed(() => {
           to: accountScopedRoute('agent_bots'),
         },
         {
-          show: true,
+          show: currentUser.value.type === 'SuperAdmin',
           name: 'Settings Macros',
           label: t('SIDEBAR.MACROS'),
           icon: 'i-lucide-toy-brick',

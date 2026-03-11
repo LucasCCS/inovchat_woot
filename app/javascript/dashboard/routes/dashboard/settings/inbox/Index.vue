@@ -91,7 +91,6 @@ const openDelete = inbox => {
         v-model:search-query="searchQuery"
         :title="$t('INBOX_MGMT.HEADER')"
         :description="$t('INBOX_MGMT.DESCRIPTION')"
-        :link-text="$t('INBOX_MGMT.LEARN_MORE')"
         :search-placeholder="$t('INBOX_MGMT.SEARCH_PLACEHOLDER')"
         feature-name="inboxes"
       >

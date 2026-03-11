@@ -103,7 +103,6 @@ onMounted(() => {
         v-model:search-query="searchQuery"
         :title="t('AGENT_BOTS.HEADER')"
         :description="t('AGENT_BOTS.DESCRIPTION')"
-        :link-text="t('AGENT_BOTS.LEARN_MORE')"
         :search-placeholder="t('AGENT_BOTS.SEARCH_PLACEHOLDER')"
         feature-name="agent_bots"
       >

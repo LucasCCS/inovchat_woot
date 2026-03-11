@@ -150,7 +150,6 @@ const tableHeaders = computed(() => {
         v-model:search-query="searchQuery"
         :title="$t('CANNED_MGMT.HEADER')"
         :description="$t('CANNED_MGMT.DESCRIPTION')"
-        :link-text="$t('CANNED_MGMT.LEARN_MORE')"
         :search-placeholder="$t('CANNED_MGMT.SEARCH_PLACEHOLDER')"
         feature-name="canned_responses"
       >

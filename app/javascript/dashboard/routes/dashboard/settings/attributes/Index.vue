@@ -169,7 +169,6 @@ const filteredAttributes = computed(() => {
         v-model:search-query="searchQuery"
         :title="$t('ATTRIBUTES_MGMT.HEADER')"
         :description="$t('ATTRIBUTES_MGMT.DESCRIPTION')"
-        :link-text="$t('ATTRIBUTES_MGMT.LEARN_MORE')"
         :search-placeholder="$t('ATTRIBUTES_MGMT.SEARCH_PLACEHOLDER')"
         feature-name="custom_attributes"
       >

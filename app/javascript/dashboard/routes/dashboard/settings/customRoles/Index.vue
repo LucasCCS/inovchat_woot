@@ -141,7 +141,6 @@ const confirmDeletion = () => {
         v-model:search-query="searchQuery"
         :title="$t('CUSTOM_ROLE.HEADER')"
         :description="$t('CUSTOM_ROLE.DESCRIPTION')"
-        :link-text="$t('CUSTOM_ROLE.LEARN_MORE')"
         :search-placeholder="$t('CUSTOM_ROLE.SEARCH_PLACEHOLDER')"
         feature-name="canned_responses"
       >

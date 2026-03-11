@@ -146,7 +146,6 @@ export default {
         v-model:search-query="searchQuery"
         :title="$t('SLA.HEADER')"
         :description="$t('SLA.DESCRIPTION')"
-        :link-text="$t('SLA.LEARN_MORE')"
         :search-placeholder="
           isBehindAPaywall ? '' : $t('SLA.SEARCH_PLACEHOLDER')
         "

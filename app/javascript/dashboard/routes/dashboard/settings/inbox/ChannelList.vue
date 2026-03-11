@@ -24,28 +24,16 @@ const channelList = computed(() => {
   const { apiChannelName } = globalConfig.value;
   const channels = [
     {
-      key: 'website',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WEBSITE.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WEBSITE.DESCRIPTION'),
-      icon: 'i-woot-website',
-    },
-    {
-      key: 'facebook',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.DESCRIPTION'),
-      icon: 'i-woot-messenger',
-    },
-    {
       key: 'whatsapp',
       title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WHATSAPP.TITLE'),
       description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WHATSAPP.DESCRIPTION'),
       icon: 'i-woot-whatsapp',
     },
     {
-      key: 'sms',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.SMS.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.SMS.DESCRIPTION'),
-      icon: 'i-woot-sms',
+      key: 'website',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WEBSITE.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.WEBSITE.DESCRIPTION'),
+      icon: 'i-woot-website',
     },
     {
       key: 'email',
@@ -54,23 +42,35 @@ const channelList = computed(() => {
       icon: 'i-woot-mail',
     },
     {
-      key: 'api',
-      title: apiChannelName || t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.DESCRIPTION'),
-      icon: 'i-woot-api',
+      key: 'facebook',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.DESCRIPTION'),
+      icon: 'i-woot-messenger',
     },
-    {
-      key: 'telegram',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.DESCRIPTION'),
-      icon: 'i-woot-telegram',
-    },
-    {
-      key: 'line',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.DESCRIPTION'),
-      icon: 'i-woot-line',
-    },
+    // {
+    //   key: 'sms',
+    //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.SMS.TITLE'),
+    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.SMS.DESCRIPTION'),
+    //   icon: 'i-woot-sms',
+    // },
+    // {
+    //   key: 'api',
+    //   title: apiChannelName || t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.TITLE'),
+    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.DESCRIPTION'),
+    //   icon: 'i-woot-api',
+    // },
+    // {
+    //   key: 'telegram',
+    //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.TITLE'),
+    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.DESCRIPTION'),
+    //   icon: 'i-woot-telegram',
+    // },
+    // {
+    //   key: 'line',
+    //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.TITLE'),
+    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.DESCRIPTION'),
+    //   icon: 'i-woot-line',
+    // },
     {
       key: 'instagram',
       title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.INSTAGRAM.TITLE'),
@@ -79,21 +79,21 @@ const channelList = computed(() => {
     },
   ];
 
-  if (hasTiktokConfigured.value) {
-    channels.push({
-      key: 'tiktok',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK.DESCRIPTION'),
-      icon: 'i-woot-tiktok',
-    });
-  }
+  // if (hasTiktokConfigured.value) {
+  //   channels.push({
+  //     key: 'tiktok',
+  //     title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK.TITLE'),
+  //     description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK.DESCRIPTION'),
+  //     icon: 'i-woot-tiktok',
+  //   });
+  // }
 
-  channels.push({
-    key: 'voice',
-    title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.VOICE.TITLE'),
-    description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.VOICE.DESCRIPTION'),
-    icon: 'i-woot-voice',
-  });
+  // channels.push({
+  //   key: 'voice',
+  //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.VOICE.TITLE'),
+  //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.VOICE.DESCRIPTION'),
+  //   icon: 'i-woot-voice',
+  // });
 
   return channels;
 });
