@@ -1,5 +1,6 @@
 <script>
 import SnackbarContainer from './components/SnackBar/Container.vue';
+import { applyBrandTheme } from '../../utils/applyBrandTheme';
 
 export default {
   components: { SnackbarContainer },
@@ -10,6 +11,8 @@ export default {
     this.setColorTheme();
     this.listenToThemeChanges();
     this.setLocale(window.chatwootConfig.selectedLocale);
+
+    applyBrandTheme();
   },
   methods: {
     setColorTheme() {

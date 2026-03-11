@@ -19,6 +19,7 @@ import {
 } from './helper/pushHelper';
 import ReconnectService from 'dashboard/helper/ReconnectService';
 import { useUISettings } from 'dashboard/composables/useUISettings';
+import { applyBrandTheme } from '../../utils/applyBrandTheme';
 
 export default {
   name: 'App',
@@ -38,6 +39,7 @@ export default {
     // Use the font size composable (it automatically sets up the watcher)
     const { currentFontSize } = useFontSize();
     const { uiSettings } = useUISettings();
+    applyBrandTheme();
 
     return {
       router,
