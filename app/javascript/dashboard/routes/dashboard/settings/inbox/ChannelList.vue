@@ -53,24 +53,24 @@ const channelList = computed(() => {
     //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.SMS.DESCRIPTION'),
     //   icon: 'i-woot-sms',
     // },
-    // {
-    //   key: 'api',
-    //   title: apiChannelName || t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.TITLE'),
-    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.DESCRIPTION'),
-    //   icon: 'i-woot-api',
-    // },
+    {
+      key: 'api',
+      title: apiChannelName || t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.API.DESCRIPTION'),
+      icon: 'i-woot-api',
+    },
     // {
     //   key: 'telegram',
     //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.TITLE'),
     //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.DESCRIPTION'),
     //   icon: 'i-woot-telegram',
     // },
-    // {
-    //   key: 'line',
-    //   title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.TITLE'),
-    //   description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.DESCRIPTION'),
-    //   icon: 'i-woot-line',
-    // },
+    {
+      key: 'line',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LINE.DESCRIPTION'),
+      icon: 'i-woot-line',
+    },
     {
       key: 'instagram',
       title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.INSTAGRAM.TITLE'),

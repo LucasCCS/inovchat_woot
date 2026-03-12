@@ -17,6 +17,7 @@ import Spinner from 'shared/components/Spinner.vue';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import MfaVerification from 'dashboard/components/auth/MfaVerification.vue';
+import CopyrightInfo from '../../../common/CopyrightInfo.vue';
 
 const ERROR_MESSAGES = {
   'no-account-found': 'LOGIN.OAUTH.NO_ACCOUNT_FOUND',
@@ -36,6 +37,7 @@ export default {
     SimpleDivider,
     MfaVerification,
     Icon,
+    CopyrightInfo
   },
   props: {
     ssoAuthToken: { type: String, default: '' },
@@ -275,7 +277,7 @@ export default {
         class="hidden w-auto h-8 mx-auto dark:block"
       />
       <div v-if="!email">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 mb-8">
           <GoogleOAuthButton v-if="showGoogleOAuth" />
           <div v-if="showSamlLogin" class="text-center">
             <router-link
@@ -348,5 +350,6 @@ export default {
         <Spinner color-scheme="primary" size="" />
       </div>
     </section>
+    <copyright-info />
   </main>
 </template>
