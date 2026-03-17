@@ -259,7 +259,7 @@ export default {
     <!-- Regular Login Section -->
     <section
       v-else
-      class="bg-white shadow sm:mx-auto mt-11 sm:w-full sm:max-w-lg dark:bg-n-solid-2 p-11 sm:shadow-lg sm:rounded-lg"
+      class="bg-white sm:mx-auto mt-11 sm:w-full sm:max-w-lg dark:bg-n-solid-2 p-11 sm:rounded-lg"
       :class="{
         'mb-8 mt-15': !showGoogleOAuth,
         'animate-wiggle': loginApi.hasErrored,
@@ -268,14 +268,14 @@ export default {
       <img
         :src="globalConfig.logo"
         :alt="globalConfig.installationName"
-        class="block w-auto h-8 mx-auto dark:hidden"
+        class="block w-auto h-24 mx-auto dark:hidden"
       />
-      <img
+      <!-- <img
         v-if="globalConfig.logoDark"
         :src="globalConfig.logoDark"
         :alt="globalConfig.installationName"
         class="hidden w-auto h-8 mx-auto dark:block"
-      />
+      /> -->
       <div v-if="!email">
         <div class="flex flex-col gap-4 mb-8">
           <GoogleOAuthButton v-if="showGoogleOAuth" />
